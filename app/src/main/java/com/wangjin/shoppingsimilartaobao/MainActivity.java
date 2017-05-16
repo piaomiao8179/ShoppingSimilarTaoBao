@@ -71,12 +71,7 @@ public class MainActivity extends AppCompatActivity {
         mTabHost.setCurrentTab(0);
 
         // 设置tab改变监听
-        mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-            @Override
-            public void onTabChanged(String s) {
-                System.out.println("===" + s);
-            }
-        });
+        mTabHost.setOnTabChangedListener(s -> System.out.println("===" + s));
 
     }
 
